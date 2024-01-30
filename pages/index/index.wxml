@@ -1,0 +1,11 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="header">ENHYPEN</view>
+    <view class="table">
+        <block wx:for="{{tableItems}}" wx:key="unique">
+            <view bindtap="onTableItemTap" data-url="{{item.url}}" class="table-row">
+                {{item.text}}
+            </view>
+        </block>
+    </view>
+</view>
