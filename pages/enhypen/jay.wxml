@@ -1,0 +1,8 @@
+<view class="table">
+  <block wx:for="{{tableData}}" wx:key="*this">
+    <view class="table-cell">
+      <text>{{item.title}}</text>
+      <image src="{{item.imageUrl}}" mode="aspectFit"></image>
+    </view>
+  </block>
+</view>
